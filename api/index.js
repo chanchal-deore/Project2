@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 
-const PORT = 4000;  
+const PORT = 3000;  
 
 
 app.use(express.json());
@@ -21,5 +21,5 @@ app.use("/api/v1", router);
 dbConnect();
 
 app.listen(PORT, () => {
-  console.log(`Server is running at port: ${PORT}`);
+  console.log("Server is running at port: ", PORT);
 });
